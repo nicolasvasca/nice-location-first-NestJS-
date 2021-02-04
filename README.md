@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -71,3 +72,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+=======
+# nice-location-first-NestJS-
+My first contact with Nest JS. Made by the Udemy platform link(https://www.udemy.com/course/the-complete-nestjs-developer-enterprise-nodejs-framework/learn/lecture/14037237#overview)
+>>>>>>> affe509961fbababedfd7606a0d6560f39ebd196
