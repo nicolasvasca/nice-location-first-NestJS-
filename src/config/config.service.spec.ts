@@ -9,7 +9,7 @@ describe('ConfigService', () => {
     service = new ConfigService ();
   });
 
-  it('should indicate views loation', () => {
+  it('should indicate views location', () => {
     const templatePath =  resolve(__dirname,'../..','views');
     expect(service.get<string>('templates.path')).toEqual(templatePath);
   });
