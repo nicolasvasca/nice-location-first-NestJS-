@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { AppModule } from './../src/app.module';
+import { AppModule } from '../src/app.module';
 
 describe('AppController (e2e)', () => {
   let app: INestApplication;
@@ -22,9 +22,10 @@ describe('AppController (e2e)', () => {
       .then(({text})=>{
         expect(text).toMatchCompiledHandlebarsTemplate('list.hbs',{
           locations: [
-            'Location 1',
-            'Location 2',
-            'Location 3',
+            { name: 'Nice Location' },
+            { name: 'Nice Location 2' },
+            { name: 'Nice Location 3' },
+
           ],
         });
       });
