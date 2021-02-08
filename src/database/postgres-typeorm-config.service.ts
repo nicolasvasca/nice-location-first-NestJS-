@@ -11,6 +11,9 @@ export class PostgresTypeOrmConfigService implements TypeOrmOptionsFactory {
             url:  this.configService.get<string>('database.url'),
             entities: this.configService.get<string[]>('orm.entities'),
             synchronize: this.configService.get<boolean>('orm.synchornize'),
+            migrationsRun: this.configService.get<boolean>('orm.migrationsRun'),
+            migrations: this.configService.get<string[]>('orm.migrations'),
+            //cli: this.configService.get<string>('orm.cli.migrationsDir')
         }
     }
     

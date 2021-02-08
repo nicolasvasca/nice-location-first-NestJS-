@@ -9,6 +9,14 @@ export default {
     orm: {
         entities: [`${SOURCE_PATH}/**/*.entity.ts`] ,
         synchornize: false,
+        migrationsRun: true,
+        migrations: [
+            resolve(__dirname, 'migrations/*{.ts,.js}')
+          ],
+        cli:{
+        migrationsDir: './migrations'
+        }
+          
     },
     public:{
         path: resolve(__dirname,'..','public')
