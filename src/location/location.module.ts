@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CommonModule } from 'src/common/common.module';
+import { CommonModule } from '../common/common.module';
 import { LocationMappingService } from './location-mapping.service';
 import {LocationController} from './location.controller'
 import { Location } from './location.entity';
